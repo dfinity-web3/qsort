@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "qsort_backend": {
+      "main": "src/qsort_backend/main.mo",
+      "type": "motoko"
+    },
+    "qsort_frontend": {
+      "dependencies": [
+        "qsort_backend"
+      ],
+      "source": [
+        "src/qsort_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
